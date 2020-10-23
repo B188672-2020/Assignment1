@@ -1,0 +1,65 @@
+commit cc4ae90fa8d79fc4b67c1ec619734851e0224f1c
+Author: B188672-2020 <email_not_provided>
+Date:   Fri Oct 23 10:52:49 2020 +0100
+
+    Changes to gensam.sh and outstat.sh
+
+commit 9d667faad212d03f049d2ab3cdc26929b300b326
+Author: B188672-2020 <email_not_provided>
+Date:   Fri Oct 23 09:38:39 2020 +0100
+
+    add log
+
+commit 6fdd789e482cfaa6b493467a3efc7cae5e62d449
+Author: B188672-2020 <email_not_provided>
+Date:   Fri Oct 23 09:34:39 2020 +0100
+
+    gensam.sh comment finished. All done.
+
+commit fe996965fa1e01d3d6f9f900ca6954efda10e2dd
+Author: B188672-2020 <email_not_provided>
+Date:   Fri Oct 23 09:31:21 2020 +0100
+
+    comment fastqc.sh finished
+
+commit 12fdc5c5a22e6e2e1934c80e936c99109a7aa1c2
+Author: B188672-2020 <email_not_provided>
+Date:   Fri Oct 23 09:24:38 2020 +0100
+
+    outstat finished and commented, Remaining fastqc and gensam to be comment
+
+commit 56f56602d755f23537077b6b15f7f78ee94ab396
+Author: B188672-2020 <email_not_provided>
+Date:   Fri Oct 23 08:14:44 2020 +0100
+
+    outstat.sh convert sam to bed and primary output
+
+commit 1e5d9dce4d27ab9ae216250a4f55c66c04508f3b
+Author: B188672-2020 <email_not_provided>
+Date:   Fri Oct 23 07:41:15 2020 +0100
+
+    Split the sam file generation process from outstat shell script as gensam.sh
+
+commit c61dec06df22c7357a1cfad7b6d3edcb64531d8b
+Author: B188672-2020 <email_not_provided>
+Date:   Fri Oct 23 04:20:42 2020 +0100
+
+    outstat.sh v1.1
+
+commit f930afdb9713fa93c36bb6a4a220328efee5ae41
+Author: B188672-2020 <email_not_provided>
+Date:   Fri Oct 23 04:02:08 2020 +0100
+
+    added outstat shell script v1 and added execution permission
+
+commit ebd9b3d7a66c930975a2f72cea014a6a9751e7f6
+Author: B188672-2020 <email_not_provided>
+Date:   Thu Oct 22 17:55:25 2020 +0100
+
+    Added the fastqc one-time report pipeline shell script
+
+commit ad7d2e558b56b3ea22459b3c632a352dae3cec3f
+Author: B188672-2020 <email_not_provided>
+Date:   Sun Oct 11 17:09:28 2020 +0100
+
+    Assignment1 submission
