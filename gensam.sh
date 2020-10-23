@@ -27,12 +27,13 @@ echo -e "Alignment would take 10 - 15 minutes."
 read -p "Start alignment (y/n):" yn
 
 # Start alignment or end the process
+# Terminate script when input is no
 if [ $yn = "N" -o $yn = "n" ]
 then
         echo -e "OK, Terminating gensam.sh"
 	unset yn
 	echo -e "End"
-
+# Start Alignment when the intput is YES
 elif [ $yn = "Y" -o $yn = "y" ]
 then
         echo -e "OK, Start generateing 216.sam..."
@@ -61,7 +62,10 @@ then
 	bowtie2 -x Tb927_genome -1 /localdisk/data/BPSM/Assignment1/fastq/222_L8_1.fq.gz -2 /localdisk/data/BPSM/Assignment1/fastq/222_L8_2.fq.gz -S 222.sam
 	echo -e "222.sam is generated"
 	echo -e "Finished."
+#Terminate when input is other than yes and no
 else
         echo -e "Please start again"
         unset yn
 fi
+
+#Termination: echo message and unset variables
