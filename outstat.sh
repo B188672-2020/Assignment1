@@ -51,6 +51,7 @@ do
 #slv and stv variables for calculating the mean
 	slv=$((($v216 + $v218 + $v219)/ 3))
 	stv=$((($v220 + $v221 + $v222)/ 3))
+	echo -e "$gn $slv $stv"
 #Append the result to the outstat file
 	echo -e "$gn	$slv	$stv" >> outstat.txt
 #Unset all the variables for next loop

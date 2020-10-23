@@ -7,8 +7,6 @@
 
 #1. Import data
 mkdir Tbb_data
-mkdir Tbb_data/Slender
-mkdir Tbb_data/Stumpy
 cp /localdisk/data/BPSM/Assignment1/fastq/fqfiles Tbb_data
 cp /localdisk/data/BPSM/Assignment1/Tbb_genome/Tb927_genome.fasta.gz Tbb_data
 cp /localdisk/data/BPSM/Assignment1/Tbbgenes.bed Tbb_data
