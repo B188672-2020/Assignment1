@@ -2,14 +2,31 @@
 #The shell script:
 #	to generate output statistic file with genes counts
 #Process:
-#	1. Import genome data, sample data, Tbbgenes data to local directory and Sort by data type e.g. life cycle 
-#	2. Align pair-end reading and genome data and generate bam file with Bowtie2
-#	3. Convert bam files to bed for alignment
-#	4. Compair genes bed file and aligned sample with bedtools 
+#	1. Convert and Sort the SAM files to BAM files for processing
+#	2. Convert BAM files to BED file format
+#	4. Compair genes data bed file and aligned sample data with bedtools 
 #	5. Generate output statistic text file
 
-#1. Import data
-mkdir Tbb_data
-cp /localdisk/data/BPSM/Assignment1/fastq/fqfiles Tbb_data
-cp /localdisk/data/BPSM/Assignment1/Tbb_genome/
+#1. Convert and Sort SAM files to BAM files
+cd Tbb_data
+for i in 216 218 219 220 221 222
+do
+#	samtools view -bS $i.sam > $i.bam
+	echo -e "Generated $i.bam"
+#	samtools sort $i.sam -o $i.sort.bam
+	echo -e "Generated $i.sort.bam"
+#	bedtools bamtobed -i $i.sort.bam > $i.bed
+	echo -e "Generated $i.bed"
+#	bedtools intersect -a Tbbgenes.bed -b $i.bed -c > output$i.txt   
+	echo -e "Generated output$i.txt"
+	echo -e "Preview output$i.txt"
+	head output$i.txt
+	lines=$(grep -n '' output$i.txt | wc -l)
+	echo -e "line number of the output: $lines"
+	unset lines
+done
+echo -e "Finished..."
+
+
+
 
