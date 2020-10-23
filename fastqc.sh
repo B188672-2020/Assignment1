@@ -40,15 +40,20 @@ then
 	unset f1
 	unset yn
 	rm -rf qcoutput
+#Stop the programme if the answer is no
 elif [ $yn = "N" -o $yn = "n" ]
 then
 	echo -e "OK, Reset and Closing..."
 	unset f1
 	unset yn
 	rm -rf qcoutput
+#End the programme if the input is other than yes and no
 else
 	echo -e "Please start again" 
 	unset f1
 	unset yn 
 	rm -rf qcoutput
 fi
+
+#Terminating the programme:
+#Reset Variables and Delete output for next execution of the shell script
